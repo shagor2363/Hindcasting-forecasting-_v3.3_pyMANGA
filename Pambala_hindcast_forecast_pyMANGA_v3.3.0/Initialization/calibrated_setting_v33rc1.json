@@ -1,0 +1,87 @@
+[
+ {
+  "fit_dir": "allometry_fit_v6",
+  "init": "derived",
+  "r_root_min": 0.0,
+  "r_crown_min": 0.0,
+  "recruits": {
+   "Rhizpop": 70,
+   "Avipop": 46,
+   "Brugpop": 160,
+   "Lumnpop": 420,
+   "Excopop": 80
+  },
+  "k_die": {
+   "Rhizpop": 2.5e-11,
+   "Avipop": 5e-12,
+   "Brugpop": 6e-12,
+   "Lumnpop": 2e-12,
+   "Excopop": 4e-12
+  },
+  "geo": {
+   "Bruguiera": {
+    "h_stem": 0.8,
+    "r_stem": 0.0075,
+    "r_root": 0.5,
+    "r_crown": 0.5
+   },
+   "Rhizophora": {
+    "r_root": 0.5,
+    "r_crown": 0.5
+   },
+   "Avicennia": {
+    "r_root": 0.35,
+    "r_crown": 0.35
+   },
+   "Lumnitzera": {
+    "r_root": 0.3,
+    "r_crown": 0.3
+   },
+   "Excoecaria": {
+    "r_root": 0.35,
+    "r_crown": 0.35
+   }
+  },
+  "name": "v33rc1",
+  "mult": {
+   "Rhizophora": {
+    "growth_factor": 5.18,
+    "h_sigmo_slope": 10.0
+   },
+   "Lumnitzera": {
+    "growth_factor": 2.95,
+    "lp": 4.0,
+    "h_sigmo_slope": 10.0
+   },
+   "Excoecaria": {
+    "growth_factor": 4.41,
+    "h_sigmo_slope": 10.0
+   },
+   "Avicennia": {},
+   "Bruguiera": {
+    "growth_factor": 0.73,
+    "half_max_h_growth_weight": 1.5
+   }
+  },
+  "note": "rb13 base (Avic/Exco 0.35, Lumn 0.30, Rhiz/Brug 0.5 m). centering: Rhiz 70, Brug 160, Lumn 420 (rb13: 1.11/0.93/1.20/0.95/0.90)",
+  "set": {
+   "Rhizophora": {
+    "kf_sap": 6.24e-10,
+    "leaf_water_potential": -7224000.000000001,
+    "growth_factor": 0.003505
+   },
+   "Avicennia": {
+    "kf_sap": 2.08e-10
+   },
+   "Lumnitzera": {
+    "kf_sap": 2.08e-10
+   },
+   "Excoecaria": {
+    "kf_sap": 2.08e-10
+   },
+   "Bruguiera": {
+    "leaf_water_potential": -7224000.000000001
+   }
+  }
+ }
+]

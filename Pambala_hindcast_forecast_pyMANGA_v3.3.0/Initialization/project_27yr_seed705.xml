@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<MangaProject>
+    <random_seed>705</random_seed>
+    <resources>
+        <aboveground>
+            <type> AsymmetricZOI </type>
+            <domain>
+                <x_1> -17.9 </x_1>
+                <y_1> -18.1 </y_1>
+                <x_2> 282.1 </x_2>
+                <y_2> 95.0 </y_2>
+                <x_resolution> 828 </x_resolution>
+                <y_resolution> 152 </y_resolution>
+                <allow_interpolation>True</allow_interpolation>
+            </domain>
+        </aboveground>
+        <belowground>
+            <type> Merge </type>
+            <modules>FixedSalinity SymmetricZOI</modules>
+            <domain>
+                <x_1> -17.9 </x_1>
+                <y_1> -18.1 </y_1>
+                <x_2> 282.1 </x_2>
+                <y_2> 95.0 </y_2>
+            </domain>
+            <x_resolution> 461 </x_resolution>
+            <y_resolution> 87 </y_resolution>
+            <allow_interpolation>True</allow_interpolation>
+            <salinity> 0.020 0.042 </salinity>
+            <min_x> -17.9 </min_x>
+            <max_x> 282.1 </max_x>
+        </belowground>
+    </resources>
+    <population>
+        <group>
+            <name> Rhizpop </name>
+            <species>Initialization/species/Rhizophora_v33rc1.py</species>
+            <vegetation_model_type> Bettina </vegetation_model_type>
+            <mortality>NoGrowth RandomGrowth</mortality>
+            <k_die>2.5e-11</k_die>
+            <distribution>
+                <type> FromFile </type>
+                <domain>
+                    <x_1> -17.9 </x_1>
+                    <y_1> -18.1 </y_1>
+                    <x_2> 282.1 </x_2>
+                    <y_2> 95.0 </y_2>
+                </domain>
+                <n_recruitment_per_step>70</n_recruitment_per_step>
+                <filename>Initialization/initial_stand_1997/initial_1997_Rhizpop.csv</filename>
+            </distribution>
+        </group>
+        <group>
+            <name> Avipop </name>
+            <species>Initialization/species/Avicennia_v33rc1.py</species>
+            <vegetation_model_type> Bettina </vegetation_model_type>
+            <mortality>NoGrowth RandomGrowth</mortality>
+            <k_die>5e-12</k_die>
+            <distribution>
+                <type> FromFile </type>
+                <domain>
+                    <x_1> -17.9 </x_1>
+                    <y_1> -18.1 </y_1>
+                    <x_2> 282.1 </x_2>
+                    <y_2> 95.0 </y_2>
+                </domain>
+                <n_recruitment_per_step>46</n_recruitment_per_step>
+                <filename>Initialization/initial_stand_1997/initial_1997_Avipop.csv</filename>
+            </distribution>
+        </group>
+        <group>
+            <name> Brugpop </name>
+            <species>Initialization/species/Bruguiera_v33rc1.py</species>
+            <vegetation_model_type> Bettina </vegetation_model_type>
+            <mortality>NoGrowth RandomGrowth</mortality>
+            <k_die>6e-12</k_die>
+            <distribution>
+                <type> FromFile </type>
+                <domain>
+                    <x_1> -17.9 </x_1>
+                    <y_1> -18.1 </y_1>
+                    <x_2> 282.1 </x_2>
+                    <y_2> 95.0 </y_2>
+                </domain>
+                <n_recruitment_per_step>160</n_recruitment_per_step>
+                <filename>Initialization/initial_stand_1997/initial_1997_Brugpop.csv</filename>
+            </distribution>
+        </group>
+        <group>
+            <name> Lumnpop </name>
+            <species>Initialization/species/Lumnitzera_v33rc1.py</species>
+            <vegetation_model_type> Bettina </vegetation_model_type>
+            <mortality>NoGrowth RandomGrowth</mortality>
+            <k_die>2e-12</k_die>
+            <distribution>
+                <type> FromFile </type>
+                <domain>
+                    <x_1> -17.9 </x_1>
+                    <y_1> -18.1 </y_1>
+                    <x_2> 282.1 </x_2>
+                    <y_2> 95.0 </y_2>
+                </domain>
+                <n_recruitment_per_step>420</n_recruitment_per_step>
+                <filename>Initialization/initial_stand_1997/initial_1997_Lumnpop.csv</filename>
+            </distribution>
+        </group>
+        <group>
+            <name> Excopop </name>
+            <species>Initialization/species/Excoecaria_v33rc1.py</species>
+            <vegetation_model_type> Bettina </vegetation_model_type>
+            <mortality>NoGrowth RandomGrowth</mortality>
+            <k_die>4e-12</k_die>
+            <distribution>
+                <type> FromFile </type>
+                <domain>
+                    <x_1> -17.9 </x_1>
+                    <y_1> -18.1 </y_1>
+                    <x_2> 282.1 </x_2>
+                    <y_2> 95.0 </y_2>
+                </domain>
+                <n_recruitment_per_step>80</n_recruitment_per_step>
+                <filename>Initialization/initial_stand_1997/initial_1997_Excopop.csv</filename>
+            </distribution>
+        </group>
+    </population>
+    <time_loop>
+        <type> Simple </type>
+        <t_start> 0 </t_start>
+        <t_end> 853200000.0 </t_end>
+        <delta_t> 3.16e7 </delta_t>
+    </time_loop>
+    <visualization>
+        <type> NONE </type>
+    </visualization>
+    <output>
+        <type> OneFile </type>
+        <output_each_nth_timestep>[1]</output_each_nth_timestep>
+        <allow_previous_output>True</allow_previous_output>
+        <output_dir>output/seed705/</output_dir>
+        <geometry_output> r_stem </geometry_output>
+        <geometry_output> h_stem </geometry_output>
+        <geometry_output> r_crown </geometry_output>
+        <geometry_output> r_root </geometry_output>
+        <growth_output> growth </growth_output>
+        <growth_output> salinity </growth_output>
+        <growth_output> ag_factor </growth_output>
+        <growth_output> bg_factor </growth_output>
+    </output>
+</MangaProject>

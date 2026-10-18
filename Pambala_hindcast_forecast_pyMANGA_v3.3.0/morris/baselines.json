@@ -1,0 +1,84 @@
+{
+  "description": "Per-species literature-transfer baselines for the Morris GSA v2 (2026-05-21).",
+  "rationale": "Rhizophora and Avicennia use published Bathmann et al. 2021 parameter values. Bruguiera is functionally transferred from Rhizophora (Rhizophoraceae). Lumnitzera and Excoecaria are functionally transferred from Avicennia (back-mangrove). Bettina-default parameters (growth_factor, maint_factor, lp, k_geom, sun_c, half_max_h_growth_weight, h_sigmo_slope, sigmo_slope) are identical across all five species per the published literature.",
+  "species_set_mapping": {
+    "Rhizophora": "set_A_rhi_like",
+    "Bruguiera": "set_A_rhi_like",
+    "Avicennia": "set_B_avi_like",
+    "Lumnitzera": "set_B_avi_like",
+    "Excoecaria": "set_B_avi_like"
+  },
+  "species_baselines": {
+    "Rhizophora": {
+      "growth_factor": 0.0035,
+      "maint_factor": 1.4e-6,
+      "leaf_water_potential": -6.45e6,
+      "kf_sap": 3.12e-10,
+      "lp": 1.886e-15,
+      "k_geom": 7000,
+      "sun_c": 5e-8,
+      "half_max_h_growth_weight": 0.12,
+      "h_sigmo_slope": 0.05,
+      "sigmo_slope": 0.015
+    },
+    "Avicennia": {
+      "growth_factor": 0.0035,
+      "maint_factor": 1.4e-6,
+      "leaf_water_potential": -8.15e6,
+      "kf_sap": 1.04e-10,
+      "lp": 1.886e-15,
+      "k_geom": 7000,
+      "sun_c": 5e-8,
+      "half_max_h_growth_weight": 0.12,
+      "h_sigmo_slope": 0.05,
+      "sigmo_slope": 0.015
+    },
+    "Bruguiera": {
+      "growth_factor": 0.0035,
+      "maint_factor": 1.4e-6,
+      "leaf_water_potential": -6.45e6,
+      "kf_sap": 3.12e-10,
+      "lp": 1.886e-15,
+      "k_geom": 7000,
+      "sun_c": 5e-8,
+      "half_max_h_growth_weight": 0.12,
+      "h_sigmo_slope": 0.05,
+      "sigmo_slope": 0.015
+    },
+    "Lumnitzera": {
+      "growth_factor": 0.0035,
+      "maint_factor": 1.4e-6,
+      "leaf_water_potential": -8.15e6,
+      "kf_sap": 1.04e-10,
+      "lp": 1.886e-15,
+      "k_geom": 7000,
+      "sun_c": 5e-8,
+      "half_max_h_growth_weight": 0.12,
+      "h_sigmo_slope": 0.05,
+      "sigmo_slope": 0.015
+    },
+    "Excoecaria": {
+      "growth_factor": 0.0035,
+      "maint_factor": 1.4e-6,
+      "leaf_water_potential": -8.15e6,
+      "kf_sap": 1.04e-10,
+      "lp": 1.886e-15,
+      "k_geom": 7000,
+      "sun_c": 5e-8,
+      "half_max_h_growth_weight": 0.12,
+      "h_sigmo_slope": 0.05,
+      "sigmo_slope": 0.015
+    }
+  },
+  "recruitment_baselines": {
+    "Rhizophora": 22,
+    "Avicennia": 12,
+    "Bruguiera": 12,
+    "Lumnitzera": 100,
+    "Excoecaria": 9
+  },
+  "salinity_baselines": {
+    "salinity_left": 0.020,
+    "salinity_right": 0.042
+  }
+}
