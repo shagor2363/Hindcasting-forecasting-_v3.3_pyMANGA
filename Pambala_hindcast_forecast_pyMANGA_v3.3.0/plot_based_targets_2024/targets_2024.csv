@@ -1,6 +1,0 @@
-species,census_stems,sampled_area_ha,domain_area_ha,target_density_per_ha,ci_low,ci_high,target_count_domain
-Rhizophora,278,0.64,3.393,455.3,340.0,579.2,1545
-Avicennia,68,0.64,3.393,111.6,75.2,150.3,379
-Bruguiera,124,0.64,3.393,176.6,115.5,249.5,599
-Lumnitzera,703,0.64,3.393,1168.7,727.2,1679.4,3965
-Excoecaria,108,0.64,3.393,179.1,106.6,264.3,608
